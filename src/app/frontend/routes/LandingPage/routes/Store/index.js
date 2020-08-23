@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import ProductList from "../../../../../../components/ProductList";
 import ProductDetails from "../../../../../../components/ProductDetails";
-import HindDetails from "../../../../../../assets/img/hind-details.jpg";
+import HindDetails from "../../../../../../assets/img/hind-details-min.jpg";
 import './style.css';
 
 const productList = [
