@@ -1,5 +1,5 @@
 .course {
-    margin-left: 35px;
+    margin-left: 26.25px;
     flex: 23%;
     flex-grow: 0;
     margin-bottom: 68px;
@@ -10,5 +10,11 @@
         margin-right: 4px;
         flex: 100%;
         margin-bottom: 23px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .course {
+        margin-left: 35px;
     }
 }
