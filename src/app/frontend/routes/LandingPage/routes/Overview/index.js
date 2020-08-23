@@ -3,7 +3,7 @@ import BoxText from "../../../../../../components/BoxText";
 import './style.css';
 import SkillList from "../../../../../../components/SkillList";
 import ProductDetails from "../../../../../../components/ProductDetails";
-import HindOverview from "../../../../../../assets/img/hind-overview-min.png";
+import HindOverview from "../../../../../../assets/img/hind-overview.jpg";
 
 const overviewProduct = {
     type: 'video',
