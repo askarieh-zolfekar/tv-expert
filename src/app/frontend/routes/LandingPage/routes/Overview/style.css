@@ -1,0 +1,21 @@
+.overview {
+    display: flex;
+}
+.overview > .right-section {
+    max-width: 646px;
+    margin-left: 38.6px;
+}
+.overview > .right-section > #overview-text {
+    overflow: auto;
+    direction: ltr;
+}
+
+@media (max-width: 1024px) {
+    .overview {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .overview > .right-section {
+        margin-left: 0;
+    }
+}

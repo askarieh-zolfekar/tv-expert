@@ -1,0 +1,32 @@
+.policy-text {
+    color: #889dc7 !important;
+    font-size: 16px;
+    line-height: 1.81;
+}
+#wait-list-line {
+    background: #889dc7;
+    height: 2px;
+    width: 40px;
+    border-radius: 10px;
+    margin-right: 19px;
+    margin-top: 16.5px;
+    margin-bottom: 46.5px;
+}
+.left-menu {
+    width: 0px;
+    opacity: 0%;
+    margin-top: 93px;
+    transition: width 100ms, opacity 1s;
+}
+.left-menu #content {
+    display: none;
+}
+.left-menu.in #content {
+    display: block;
+}
+.left-menu.in {
+    width: 275px;
+    height: 100%;
+    padding-right: 71px;
+    opacity: 100%;
+}

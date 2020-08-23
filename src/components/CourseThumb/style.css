@@ -1,0 +1,15 @@
+.course-thumb > img {
+    position: relative;
+    border-radius: 5px;
+}
+.course-thumb:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../assets/img/course-overlay.svg');
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

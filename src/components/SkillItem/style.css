@@ -1,0 +1,31 @@
+.skill {
+    border-radius: 5px;
+    background-color: var(--dark-slate-blue-four);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+}
+.skill #text {
+    font-size: 14px;
+    line-height: 0.86;
+    margin: 0;
+    color: var(--cloudy-blue);
+}
+
+@media (max-width: 1024px) {
+    .skill {
+        align-items: center;
+        flex: 48%;
+        padding: 20px 0 19px 0;
+        flex-grow: 0;
+    }
+    .skill:nth-child(odd) {
+        margin-left: 9px;
+    }
+    .skill:nth-child(even) {
+        margin-left: 0px;
+    }
+}

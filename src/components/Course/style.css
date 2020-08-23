@@ -1,0 +1,14 @@
+.course {
+    margin-left: 35px;
+    flex: 23%;
+    flex-grow: 0;
+    margin-bottom: 68px;
+}
+@media (max-width: 1024px) {
+    .course {
+        margin-left: 29px;
+        margin-right: 4px;
+        flex: 100%;
+        margin-bottom: 23px;
+    }
+}

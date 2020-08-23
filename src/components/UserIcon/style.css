@@ -1,0 +1,12 @@
+.icon-user {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    box-shadow: -2px 2px 5px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #e9edf0;
+    background-color: #ffffff;
+}

@@ -1,0 +1,37 @@
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tab-item .title {
+    font-size: 18px;
+    font-family: 'LoewNextArabic-Medium';
+    color: var(--bluegrey);
+    margin: 0 0 11.5px 0;
+}
+.tab-item.active .title {
+    font-family: 'LoewNextArabic-ExtraBold';
+    color: #ffffff;
+
+}
+.tab-item > .link {
+    text-decoration: none;
+}
+
+.tab-item .line {
+    display: none;
+}
+.tab-item.active .line {
+    width: 25.5px;
+    height: 1px;
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width: 1024px) {
+    .tab-item .title {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}

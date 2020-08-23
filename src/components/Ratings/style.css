@@ -1,0 +1,21 @@
+.ratings {
+    display: flex;
+    align-items: center;
+}
+
+.ratings .star {
+    margin-left: 2.7px;
+}
+.ratings .label {
+    color: var(--cloudy-blue);
+    font-size: 13px;
+    margin: 0 5.3px 0 0;
+}
+@media (max-width: 1024px) {
+    .ratings .label {
+        font-size: 11px;
+    }
+    .ratings .star {
+        width: 10.8px;
+    }
+}

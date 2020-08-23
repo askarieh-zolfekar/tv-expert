@@ -1,0 +1,21 @@
+.product {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.product #product-desc {
+    font-family: 'LoewNextArabic-Bold';
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 17px;
+    margin-bottom: 11px;
+    margin-right: 6px;
+    margin-left: 3px;
+    line-height: 1.43;
+    flex: 1;
+}
+@media (max-width: 1024px) {
+    .product #product-desc {
+        font-size: 10px;
+    }
+}

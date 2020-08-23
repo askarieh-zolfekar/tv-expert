@@ -1,0 +1,40 @@
+.box-text {
+    border-radius: 5px;
+    box-shadow: 0 5px 86px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--light-navy-blue);
+    padding: 45px 53px 45px 57px;
+    height: 328px;
+}
+.box-text > .main-text {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.7;
+    margin: 0;
+}
+.box-text::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 4px;
+    background-color: var(--denim-blue);
+}
+
+/* Track */
+.box-text::-webkit-scrollbar-track {
+    width: 5px;
+    border-radius: 4px;
+    background-color: var(--dusk-blue);
+}
+
+/* Handle */
+.box-text::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 4px;
+    background-color: var(--denim-blue);
+}
+@media (max-width: 1024px) {
+    .box-text > .main-text {
+        font-size: 15px;
+    }
+    .box-text {
+        padding: 40px 30px 40px 29px;
+    }
+}

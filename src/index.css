@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Loew';
+    font-style: normal;
+    src: url("./assets/fonts/Loew Next Arabic.otf"), /* IE9 Compat Modes */
+    url("./assets/fonts/Loew Next Arabic.otf") format('opentype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'LoewNextArabic-Bold';
+    font-weight: bold;
+    src: url("./assets/fonts/Loew Next Arabic Bold.otf"), /* IE9 Compat Modes */
+    url("./assets/fonts/Loew Next Arabic Bold.otf") format('opentype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'LoewNextArabic-Medium';
+    font-weight: bold;
+    src: url("./assets/fonts/Loew Next Arabic Medium.otf"), /* IE9 Compat Modes */
+    url("./assets/fonts/Loew Next Arabic Medium.otf") format('opentype'); /* Safari, Android, iOS */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'LoewNextArabic-ExtraBold';
+    font-weight: bold;
+    src: url("./assets/fonts/Loew Next Arabic ExtraBold.otf"), /* IE9 Compat Modes */
+    url("./assets/fonts/Loew Next Arabic Bold.otf") format('opentype'); /* Safari, Android, iOS */
+}
+
+:root {
+    --dark-slate-blue: #254176;
+    --dark-slate-blue-two: #1c3668;
+    --brownish-orange: #e28519;
+    --cobalt: #1d428b;
+    --dark-slate-blue-three: #1f3a6e;
+    --cloudy-blue: #a7b5d2;
+    --bluegrey: #8191b2;
+    --dusk-blue: #24417b;
+    --denim-blue: #375798;
+    --light-navy-blue: #2a4986;
+    --dark-slate-blue-four: #223c6e;
+    --cobalt-two: #193b7e;
+}
+
+body {
+    font-family: 'Loew';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+html * {
+    direction: rtl;
+}
+#root {
+    height: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    border-radius: 4px;
+    background-color: var(--denim-blue);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    width: 0px;
+    border-radius: 4px;
+    background-color: var(--dusk-blue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    width: 0px;
+    border-radius: 4px;
+    background-color: var(--denim-blue);
+}
+
+img {
+    max-width: 100%;
+}
+body {
+    display: flex;
+    overflow: auto;
+}
+body #root {
+    flex: 1;
+}
+@media (max-width: 1024px) {
+    .desktop {
+        display: none !important;
+    }
+}
+@media (min-width: 1025px) {
+    .mobile {
+        display: none !important;
+    }
 }

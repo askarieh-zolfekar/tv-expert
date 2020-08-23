@@ -1,0 +1,29 @@
+.app-bar {
+    display: flex;
+    align-items: center;
+}
+.app-bar .right-section {
+    margin-left: auto;
+    display: flex;
+}
+.app-bar .right-section > img:first-child {
+    margin-left: 42.4px;
+}
+@media (min-width: 1440px) {
+    .app-bar {
+        height: 84.8px;
+    }
+}
+@media (min-width: 1920px) {
+    .app-bar {
+        height: 93px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .app-bar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+}

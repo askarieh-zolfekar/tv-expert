@@ -1,0 +1,23 @@
+.feature-list {
+    display: flex;
+}
+
+.feature-list .feature {
+    margin-right: 49px;
+}
+
+.feature-list .feature:first-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 1024px) {
+    .feature-list .feature {
+        margin-right: 20px;
+    }
+    .feature-list .feature .details {
+        display: none;
+    }
+    .feature-list .feature:last-child .details {
+        display: block;
+    }
+}

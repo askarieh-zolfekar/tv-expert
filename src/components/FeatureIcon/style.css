@@ -1,0 +1,19 @@
+.icon-wrapper {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 3px var(--brownish-orange);
+    background-color: #ffffff;
+    object-fit: contain;
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-wrapper.microphone {
+    border: solid 3px #1dd950;
+}
+
+.icon-wrapper.camera {
+    border: solid 3px #e21956;
+}

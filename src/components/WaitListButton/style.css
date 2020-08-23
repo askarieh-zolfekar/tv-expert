@@ -1,0 +1,14 @@
+.wait-list-button {
+    display: flex;
+}
+.left-menu-in .wait-list-button .open-details {
+    display: none;
+}
+.wait-list-button .close-details {
+    position: relative;
+    left: -35px;
+    display: none;
+}
+.left-menu-in .wait-list-button .close-details {
+    display: block;
+}

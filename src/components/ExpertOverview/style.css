@@ -1,0 +1,48 @@
+.expert-overview {
+    display: flex;
+    align-items: flex-start;
+}
+.expert-overview ul{
+    list-style-type: none !important;
+    margin: 7px 0 0 0;
+    padding: 0;
+}
+.expert-overview #main-title {
+    color: #fff;
+    font-family: LoewNextArabic-ExtraBold;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.expert-overview #expert-name {
+    color: var(--cloudy-blue);
+    font-family: LoewNextArabic-Bold;
+    font-size: 20px;
+    margin-top: 6px
+}
+#expert-status {
+    margin-right: 18px
+}
+#expert-rating {
+    margin-top: 6px;
+}
+@media (max-width: 1024px) {
+    .expert-overview #main-title {
+        font-size: 11px;
+        margin-top: 30px;
+    }
+    .expert-overview #expert-name {
+        font-size: 15px;
+        margin-top: 9px
+    }
+    #expert-status {
+        margin-right: 38px
+    }
+    #expert-img {
+        width: 65px;
+        margin-top: 25px;
+        margin-right: 30px;
+    }
+    #expert-rating {
+        margin-top: 1px;
+    }
+}

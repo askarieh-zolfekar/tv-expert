@@ -1,0 +1,23 @@
+.feature {
+    display: flex;
+    align-items: center;
+}
+.feature #title{
+    font-family: 'LoewNextArabic-Bold';
+    color: #ffffff;
+    font-size: 16px;
+}
+.feature #status {
+    font-family: 'LoewNextArabic-Medium';
+    font-size: 14px;
+    color: var(--cloudy-blue);
+}
+.feature > .details {
+    margin-right: 17px;
+}
+
+@media (max-width: 1024px) {
+    .feature #title {
+        font-size: 10px;
+    }
+}

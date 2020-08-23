@@ -1,0 +1,25 @@
+.profile-bar {
+    display: flex;
+    align-items: center;
+    height: 183px;
+    opacity: 0.97;
+    background-color: var(--dark-slate-blue-three);
+    margin-left: -66px;
+    margin-right: -66px;
+    padding-left: 66px;
+    padding-right: 66px;
+}
+.profile-bar .right-section {
+    margin-left: auto;
+    display: flex;
+}
+@media (max-width: 1024px) {
+    .profile-bar {
+        margin: 0;
+        padding: 0 29.9px;
+        height: 102px;
+    }
+    .time-viewer {
+        max-width: 167.9px;
+    }
+}

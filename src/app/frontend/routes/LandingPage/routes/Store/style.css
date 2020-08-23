@@ -1,0 +1,21 @@
+.store {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 28px;
+}
+.store #store-products {
+    width: 100%;
+    max-width: 659.9px;
+}
+
+@media (max-width: 1024px) {
+    .store {
+        flex-wrap: wrap;
+        margin-right: 0;
+        flex-direction: column-reverse;
+    }
+    .store #store-products {
+        margin: 52.1px 0px 119px 0px;
+    }
+
+}

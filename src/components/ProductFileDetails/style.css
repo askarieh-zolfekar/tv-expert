@@ -1,0 +1,57 @@
+.product-file-details {
+    height: 100vh;
+    max-height: 615.7px;
+    flex: 1;
+    position: relative;
+    background-color: var(--cobalt);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.product-file-details::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    display: block;
+    background-image: url("../../assets/img/bg-file-details.svg");
+}
+.product-file-details > #overlay-content{
+    position: absolute;
+    margin-right: 46.4px;
+    margin-left: 46.4px;
+    right: 0;
+    left: 0;
+    bottom: 46.7px;
+
+}
+.product-file-details #title {
+    font-family: 'LoewNextArabic-Medium';
+    font-size: 29px;
+    color: #ffffff;
+    line-height: 1.55;
+    max-width: 500px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.product-file-details .buy-download {
+    position: absolute;
+    top: 46.2px;
+    left: 50.1px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.product-file-details .buy-download p {
+    font-family: 'LoewNextArabic-Bold';
+    font-size: 16px;
+    line-height: 1.56;
+    color: #ffffff;
+    margin-left: 15px;
+}
+@media (max-width: 1024px) {
+    .product-file-details #title {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,10 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+    .product-list {
+        margin: 0 30px;
+        justify-content: space-between;
+    }
+}

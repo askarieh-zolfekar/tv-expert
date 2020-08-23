@@ -1,0 +1,11 @@
+.file-thumb {
+    width: 196px;
+    height: 196px;
+}
+
+@media (max-width: 1024px) {
+    .file-thumb {
+        width: 152px;
+        height: 152px;
+    }
+}

@@ -1,0 +1,8 @@
+.landing-page #landing-content {
+    margin-top: 50px
+}
+@media (max-width: 1024px) {
+    .landing-page #landing-content {
+        margin-top: 21px
+    }
+}

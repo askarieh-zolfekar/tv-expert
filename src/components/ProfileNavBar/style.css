@@ -1,0 +1,30 @@
+.profile-nav-bar {
+    display: flex;
+    align-items: stretch;
+    height: 92px;
+    margin-left: -66px;
+    margin-right: -66px;
+}
+.profile-nav-bar .right-section {
+    display: flex;
+    flex: 1;
+    padding-right: 66px;
+}
+.profile-nav-bar .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 66px;
+    background-image: linear-gradient(80deg, var(--dark-slate-blue) 11%, #153064 95%);
+}
+
+@media (max-width: 1024px) {
+    .profile-nav-bar, .profile-nav-bar .left-section {
+        margin: 0;
+        padding: 0;
+    }
+    .profile-nav-bar .left-section {
+        flex: 100%;
+        justify-content: center;
+    }
+}

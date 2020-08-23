@@ -1,0 +1,15 @@
+.broadcast {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 28px;
+}
+@media (max-width: 1024px) {
+    .broadcast {
+        flex-wrap: wrap;
+        margin-right: 0;
+        flex-direction: column-reverse;
+    }
+    .broadcast #broadcast-list{
+        margin-top: 52px;
+    }
+}

@@ -1,0 +1,27 @@
+.tab-list {
+    display: flex;
+    align-items: center;
+}
+.tab-list .tab-item {
+    position: relative;
+    margin-left: 40px;
+}
+@media (max-width: 1024px) {
+    .tab-list {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        margin-right: 26px;
+        width: calc(100vw - 26px);
+    }
+    .tab-list .tab-item {
+        position: relative;
+        margin-left: 0;
+        padding-left: 26px;
+        display: flex;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
