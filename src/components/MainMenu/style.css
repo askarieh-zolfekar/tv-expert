@@ -1,0 +1,40 @@
+.main-menu {
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 52.8px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 0px;
+    transition: width 100ms;
+    z-index: 9;
+    background: #fff;
+    padding-top: 119px;
+}
+
+.main-menu #content {
+    display: none;
+}
+
+.main-menu.in #content {
+    display: block;
+}
+
+.main-menu.in {
+    width: 301px;
+    height: 100%;
+}
+.main-menu-content {
+    text-align: center;
+}
+.main-menu .main-menu-item.special {
+    font-family: 'LoewNextArabic-Bold';
+}
+.main-menu .main-menu-item {
+    font-family: 'LoewNextArabic-Medium';
+    color: var(--cobalt);
+    line-height: 2.06;
+    margin-bottom: 31px;
+    font-size: 17px;
+}

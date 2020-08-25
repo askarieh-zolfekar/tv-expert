@@ -10,3 +10,13 @@
     border: solid 1px #e9edf0;
     background-color: #ffffff;
 }
+
+@media (max-width: 1024px) {
+    .icon-user {
+        width: 37px;
+        height: 37px;
+    }
+    .icon-user > img {
+        width: 12.6px;
+    }
+}

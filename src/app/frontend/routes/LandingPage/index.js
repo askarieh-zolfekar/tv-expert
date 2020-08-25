@@ -8,6 +8,7 @@ import ExpertOverview from "../../../../components/ExpertOverview";
 import {MobileView} from 'react-device-detect';
 import TabList from "../../../../components/TabList";
 import {NAV_BAR_TABS} from "../../../../constants";
+import FloatingButton from "../../../../components/FloatingButton";
 
 const LandingPage = ({match}) => {
     return (
@@ -17,6 +18,7 @@ const LandingPage = ({match}) => {
             <MobileView>
                 <ExpertOverview />
                 <TabList tabs={NAV_BAR_TABS} style={{marginTop: '47px'}}/>
+                <FloatingButton>حجز عيادة (20 دينار كويتي)</FloatingButton>
             </MobileView>
             <div id={'landing-content'}>
                 <Switch>

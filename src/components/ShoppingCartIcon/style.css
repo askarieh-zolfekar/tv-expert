@@ -9,3 +9,12 @@
 .shopping-cart-icon img {
     position: absolute;
 }
+
+@media (max-width: 1024px) {
+    .shopping-cart-icon img:nth-child(2){
+        width: 18.5px;
+    }
+    .shopping-cart-icon {
+        width: 34.3px;
+    }
+}

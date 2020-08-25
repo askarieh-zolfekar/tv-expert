@@ -1,0 +1,21 @@
+.floating-button {
+    position: fixed;
+    margin-left: 29px;
+    margin-right: 30px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    z-index: 4;
+    bottom: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(107deg, #e83866 -26%, #e83866 -17%, #e57a3c 84%, #e57a3c 112%);
+    padding-top: 24px;
+    padding-bottom: 23px;
+}
+.floating-button #label {
+    font-family: 'LoewNextArabic-ExtraBold';
+    font-size: 16px;
+    line-height: 1.81;
+    color: #ffffff;
+    margin: 0;
+}

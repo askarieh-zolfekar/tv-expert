@@ -42,7 +42,7 @@
 @media (max-width: 1024px) {
     .product-video-details #title {
         font-size: 14px;
-        max-width: 130.8px;
+        max-width: 205px;
         margin-bottom: 12.5px;
     }
     .product-video-details > #overlay-content{

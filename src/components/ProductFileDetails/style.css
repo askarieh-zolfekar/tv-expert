@@ -53,5 +53,26 @@
 @media (max-width: 1024px) {
     .product-file-details #title {
         font-size: 14px;
+        max-width: 205px;
+        margin-bottom: 10px;
+        margin-top: 14px;
+    }
+    .product-file-details::before {
+        right: 0px;
+    }
+    .product-file-details .buy-download {
+        top: 18.9px;
+        left: 20.5px;
+
+    }
+    .product-file-details .buy-download p {
+        font-size: 10px;
+        margin-bottom: 0;
+        margin-left: 17.2px;
+    }
+    .product-file-details > #overlay-content {
+        bottom: 26.9px;
+        margin-right: 30px;
+        margin-left: 30px;
     }
 }

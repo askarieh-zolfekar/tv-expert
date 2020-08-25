@@ -45,6 +45,13 @@
         border-radius: 15px 15px 39px 39px;
         box-shadow: unset;
     }
+    .front-end {
+        flex-direction: row;
+    }
+    .front-end .main-menu-in.wrapper {
+        overflow: hidden;
+        height: 100vh;
+    }
 }
 /*
 0.911

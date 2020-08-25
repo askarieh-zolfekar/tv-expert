@@ -3,6 +3,9 @@ import './style.css';
 import Text from "../Text";
 import WaitUserList from "../WaitUserList";
 import SocialMediaBar from "../SocialMediaBar";
+import {BrowserView} from 'react-device-detect';
+import {useDispatch} from "react-redux";
+import {toggleLeftMenu} from "../../actions";
 
 const waitUsers = [
     {name:'مستخدم 1', lastActive: '15 دقيقة'},
@@ -14,19 +17,22 @@ const waitUsers = [
     {name:'مستخدم 6', lastActive: '2 دقيقة'},
 ];
 
-const LeftMenu = ({open}) => {
+const WaitingListMenu = ({open}) => {
+    const dispatch = useDispatch();
     return (
         <div className={`left-menu ${open?'in':''}`}>
             <div id="content">
-                <Text style={{fontFamily: 'LoewNextArabic-ExtraBold', fontSize:'20px', marginTop: '6px', marginRight: '19px'}}>14 قائمة الانتظار</Text>
-                <div id="wait-list-line"></div>
+                <Text id={'wait-list-title'} onClick={() => dispatch(toggleLeftMenu())}>14 قائمة الانتظار</Text>
+                <div id="wait-list-line" className={'desktop'}></div>
                 <WaitUserList users={waitUsers} />
-                <Text className={'policy-text'} style={{marginTop: '149px'}}>جميع الحقوق محفوظة</Text>
-                <Text className={'policy-text'}>تايم فيوير © ٢٠١٣ - ٢٠٢٠</Text>
-                <SocialMediaBar style={{marginTop: '24px'}}/>
+                <BrowserView>
+                    <Text className={'policy-text'} style={{marginTop: '149px'}}>جميع الحقوق محفوظة</Text>
+                    <Text className={'policy-text'}>تايم فيوير © ٢٠١٣ - ٢٠٢٠</Text>
+                    <SocialMediaBar style={{marginTop: '24px'}}/>
+                </BrowserView>
             </div>
         </div>
     );
 };
 
-export default LeftMenu;
+export default WaitingListMenu;

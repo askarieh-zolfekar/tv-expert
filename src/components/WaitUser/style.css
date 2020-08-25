@@ -35,3 +35,18 @@
     line-height: 2.19;
     margin: 0;
 }
+
+@media (max-width: 1024px) {
+    .wait-user {
+        padding-right: 30px;
+    }
+    .wait-user #last-active {
+        font-size: 10px;
+    }
+    .wait-user #user-name {
+        font-size: 15px;
+    }
+    .wait-user.selected:after {
+        border-radius: 50px 0 0 50px;
+    }
+}
