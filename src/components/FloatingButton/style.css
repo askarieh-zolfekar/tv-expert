@@ -19,3 +19,6 @@
     color: #ffffff;
     margin: 0;
 }
+.left-menu-in .floating-button {
+    visibility: hidden;
+}
