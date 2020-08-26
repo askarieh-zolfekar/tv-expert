@@ -5,6 +5,7 @@ import ExpertOverview from "../ExpertOverview";
 import BellWhite from "../../assets/img/ic-bell-white.svg";
 import WelcomeUser from "../WelcomeUser";
 import {BrowserView, MobileView} from 'react-device-detect';
+import IconBell from "../IconBell";
 
 const ProfileBar = () => {
     return (
@@ -13,7 +14,7 @@ const ProfileBar = () => {
                 <ExpertOverview />
             </BrowserView>
             <MobileView viewClassName="right-section">
-                <img src={BellWhite} alt={'bell'} style={{marginLeft: '14.4px'}}/>
+                <IconBell style={{marginLeft: '14.4px'}}/>
                 <WelcomeUser />
             </MobileView>
             <div className="left-section">

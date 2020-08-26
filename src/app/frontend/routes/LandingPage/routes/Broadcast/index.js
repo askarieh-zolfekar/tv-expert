@@ -1,10 +1,17 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import ProductList from "../../../../../../components/ProductList";
 import ProductDetails from "../../../../../../components/ProductDetails";
 import HindDetails from '../../../../../../assets/img/hind-details-min.jpg';
 import './style.css';
+import {useDispatch} from "react-redux";
+import {changeExpertActiveTab} from "../../../../../../actions";
+import {TAB_BROADCAST_INDEX} from "../../../../../../constants";
 
 const Broadcast = (props) => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(changeExpertActiveTab(TAB_BROADCAST_INDEX, false))
+    });
     const broadCastList = [
         {type: 'video', text: 'تعرف على أسرار صناعة المحتوى التسويقي الفعال', price: '299', downloads: 299, image: HindDetails},
         {type: 'video', text: 'تعرف على أسرار صناعة المحتوى التسويقي الفعال', price: '149', downloads: 39, image: HindDetails},

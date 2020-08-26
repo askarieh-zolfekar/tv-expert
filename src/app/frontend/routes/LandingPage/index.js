@@ -2,7 +2,14 @@ import React from 'react';
 import './style.css';
 import ProfileBar from "../../../../components/ProfileBar";
 import ProfileNavBar from "../../../../components/ProfileNavBar";
-import {AsyncBroadcast, AsyncCourses, AsyncOverview, AsyncStore, AsyncBook} from "../../../../components/AsyncComponent";
+import {
+    AsyncBroadcast,
+    AsyncCourses,
+    AsyncOverview,
+    AsyncStore,
+    AsyncBook,
+    AsyncCourseDetails
+} from "../../../../components/AsyncComponent";
 import {Route, Switch} from "react-router-dom";
 import ExpertOverview from "../../../../components/ExpertOverview";
 import {MobileView} from 'react-device-detect';
@@ -36,6 +43,11 @@ const LandingPage = ({match}) => {
                         exact
                         path={`${match.url}courses`}
                         component={AsyncCourses}
+                    />
+                    <Route
+                        exact
+                        path={`${match.url}courses/:id`}
+                        component={AsyncCourseDetails}
                     />
                     <Route
                         exact

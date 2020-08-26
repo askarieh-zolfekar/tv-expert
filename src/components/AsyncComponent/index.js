@@ -55,6 +55,14 @@ const AsyncCourses = Loadable({
         return <Component {...props}/>;
     }
 });
+const AsyncCourseDetails = Loadable({
+    loader: () => import("../../app/frontend/routes/LandingPage/routes/CourseDetails"),
+    loading: () => <CircleLazyLoader/>,
+    render(loaded, props) {
+        let Component = loaded.default;
+        return <Component {...props}/>;
+    }
+});
 const AsyncOverview = Loadable({
     loader: () => import("../../app/frontend/routes/LandingPage/routes/Overview"),
     loading: () => <CircleLazyLoader/>,
@@ -90,4 +98,5 @@ export {
     AsyncOverview,
     AsyncStore,
     AsyncBook,
+    AsyncCourseDetails,
 };

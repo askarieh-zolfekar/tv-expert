@@ -5,9 +5,9 @@ import Thumbnail from "../Thumbnail";
 import {isMobile} from 'react-device-detect';
 
 const Course = (props) => {
-    const {course} = props;
+    const {course, onCourseClick} = props;
     return (
-        <div className={'course'} {...props}>
+        <div className={'course'} {...props} onClick={onCourseClick}>
             <Thumbnail filetype={'course'} filenumber={course.videosNum} />
             <div style={{position: 'relative', minHeight: '53px'}}>
                 <Text style={{fontFamily: 'LoewNextArabic-Bold',   color: '#ffffff',  fontSize: '14px', marginTop: '17px', marginBottom: '11px', marginRight:'9px', marginLeft:'3px', lineHeight: '1.43', maxWidth: '72%'}}>{course.text}</Text>

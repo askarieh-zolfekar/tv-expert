@@ -18,3 +18,9 @@ export const NAV_BAR_TABS = [
     {title: 'كورسات', link:'/courses'},
     {title: 'حجز عيادة (20 دينار كويتي)', link:'/book' },
 ];
+
+export const TAB_OVERVIEW_INDEX = 0;
+export const TAB_STORE_INDEX = 1;
+export const TAB_BROADCAST_INDEX = 2;
+export const TAB_COURSES_INDEX = 3;
+export const TAB_BOOK_INDEX = 4;

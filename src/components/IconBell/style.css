@@ -1,0 +1,16 @@
+.icon-bell:after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: -9px;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    border: solid 1.7px var(--dark-slate-blue-two);
+    background-color: #e83866;
+    border-radius: 100%;
+}
+.icon-bell {
+    display: flex;
+    position: relative;
+}

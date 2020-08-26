@@ -3,7 +3,7 @@
     box-shadow: 0 5px 86px 0 rgba(0, 0, 0, 0.05);
     background-color: var(--light-navy-blue);
     padding: 45px 53px 45px 57px;
-    height: 328px;
+    max-height: 328px;
 }
 .box-text > .main-text {
     font-size: 20px;
@@ -30,11 +30,24 @@
     border-radius: 4px;
     background-color: var(--denim-blue);
 }
+.title-text {
+    margin-bottom: 24px;
+    font-family: LoewNextArabic-ExtraBold;
+    font-size: 29px;
+    line-height: 1;
+    color: #ffffff;
+}
 @media (max-width: 1024px) {
     .box-text > .main-text {
         font-size: 15px;
     }
     .box-text {
         padding: 40px 30px 40px 29px;
+        max-height: unset;
+    }
+    .title-text {
+        margin-bottom: 33px;
+        font-size: 16px;
+        margin-right: 5px;
     }
 }

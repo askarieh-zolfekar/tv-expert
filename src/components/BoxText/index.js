@@ -2,11 +2,16 @@ import React from 'react';
 import './style.css';
 import Text from "../Text";
 
-const BoxText = (props) => {
+const BoxText = ({id, title, children}) => {
     return (
-        <div className="box-text" {...props}>
+        <div className="box-text" id={id}>
+            {title && (
+                <Text className={'title-text'}>
+                    {title}
+                </Text>
+            )}
             <Text className={'main-text'}>
-                هند الناهض مستشارة إعلام رقمي, مستشارة الإعلام الإلكتروني لمكتب وكيل وزارة الإعلام الكويتية وهي المؤسسة لشركة “سوشالوبي” للخدمات المختصة في مجال الإعلام الإجتماعي , بالإضافة الى إنها مستشارة في مجال التواصل الاجتماعي.هند الناهض مستشارة إعلام رقمي, مستشارة الإعلام الإلكتروني لمكتب وكيل وزارة الإعلام الكويتية وهي المؤسسة لشركة “سوشالوبي” للخدمات المختصة في مجال الإعلام الإجتماعي , بالإضافة الى إنها مستشارة في مجال التواصل الاجتماعي.
+                {children}
             </Text>
         </div>
     );

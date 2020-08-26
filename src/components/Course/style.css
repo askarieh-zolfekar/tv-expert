@@ -3,6 +3,7 @@
     flex: 23%;
     flex-grow: 0;
     margin-bottom: 68px;
+    cursor: pointer;
 }
 @media (max-width: 1024px) {
     .course {

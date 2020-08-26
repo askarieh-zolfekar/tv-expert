@@ -29,9 +29,17 @@
     position: absolute;
     bottom: 0;
 }
+#details-arrow {
+    margin-bottom: 11.5px;
+    margin-left: 8px
+}
 @media (max-width: 1024px) {
     .tab-item .title {
         font-size: 12px;
         white-space: nowrap;
+    }
+    #details-arrow {
+        width: 10.2px;
+        margin-left: 6px
     }
 }
