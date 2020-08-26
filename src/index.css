@@ -131,6 +131,13 @@ body {
 body #root {
     flex: 1;
 }
+a,a:hover,a:focus, a:visited{
+    border:none;
+    outline:none;
+    text-decoration:none;
+    color:inherit;
+    -webkit-tap-highlight-color: transparent;
+}
 @media (max-width: 1024px) {
     .desktop {
         display: none !important;
